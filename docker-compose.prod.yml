@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  node:
+    image: ${WEBWORKER_IMAGE}
+    user: "node"
+    ports:
+      - "80:3000"
+    environment:
+      - "NODE_ENV=prod"
